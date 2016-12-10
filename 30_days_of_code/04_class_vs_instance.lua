@@ -15,17 +15,18 @@ function Person.new (initialAge)
    if (initialAge > 0) then
        self.age = initialAge
    else
+       self.age = 0
        print "Age is not valid, setting age to 0."
    end
    return self;
 end
 function Person:amIOld()
     if (self.age < 13) then
-        print "You are young.."
+        print "You are young."
     elseif (self.age >= 13 and self.age <= 18) then
-        print "You are a teenager.."
+        print "You are a teenager."
     else
-        print "You are old.."
+        print "You are old."
     end
 end
 function Person:yearPasses ()
